@@ -1,15 +1,8 @@
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include "btree.h"
 
-typedef struct BTreeNode {
-  int *keys; //vetor 
-  struct BTreeNode **children;
-  int num_keys;
-  bool is_leaf;
-  int capacity; 
-} BTreeNode;
+BTreeNode* createNode(int t, bool is_leaf) {
 
-int main(void) {
-  return 0;
 }
