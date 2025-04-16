@@ -1,7 +1,7 @@
 #include <stdbool.h>
 
 typedef struct BTreeNode {
-  int *keys; //vetor
+  int *keys;
   struct BTreeNode **children;
   int num_keys;
   bool is_leaf;
@@ -9,8 +9,8 @@ typedef struct BTreeNode {
 } BTreeNode;
 
 typedef struct BTree {
-    BTreeNode *root;
-    int capacity;
+  BTreeNode *root;
+  int capacity;
 } BTree;
 
 BTreeNode* createNode(int t, bool is_leaf);
