@@ -14,7 +14,7 @@ typedef struct BTree {
 } BTree;
 
 BTreeNode* createNode(int t, bool is_leaf);
-BTree* createTree(int k);
+BTree* createTree(int t);
 void destroyNode(BTreeNode* n);
 void destroyTree(BTree* b);
 BTreeNode* search(BTreeNode* root, int key);

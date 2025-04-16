@@ -18,6 +18,11 @@ BTreeNode* createNode(int t, bool is_leaf) {
   return node;
 }
 
+BTree* createTree(int t) {
+  BTree* tree = (BTree*)malloc(sizeof(BTree));
+  return tree;
+}
+
 int main(void) {
   return 0;
 }
