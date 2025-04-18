@@ -13,11 +13,15 @@ typedef struct BTree {
   int capacity;
 } BTree;
 
-BTreeNode* createNode(int capacity, bool is_leaf);
-BTree* createTree(int capacity);
-void destroyNode(BTreeNode* node);
-void destroyTree(BTree* tree);
-BTreeNode* search(BTreeNode* root, int key);
-void insertKey(BTree* root, int key);
-void splitChild(BTreeNode* node, int index);
-void insertNonFull(BTreeNode* node, int key);
+BTreeNode *createNode(int capacity, bool is_leaf);
+BTree *createTree(int capacity);
+void destroyNode(BTreeNode *node);
+void destroyTree(BTree *tree);
+BTreeNode *search(BTreeNode *root, int key);
+void insertKey(BTree *root, int key);
+void splitChild(BTreeNode *node, int index);
+void insertNonFull(BTreeNode *node, int key);
+void printNode(BTreeNode *node);
+int searchKey(BTreeNode *node, int key);
+void printTree(BTree *tree);
+int getHeight(BTree *tree);
